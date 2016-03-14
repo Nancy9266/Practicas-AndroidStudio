@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PracticaIntegradora</string>
+    <string name="action_settings">Settings</string>
+    <string name="click">click</string>
+    <string name="Off">Off</string>
+    <string name="On">On</string>
+    <string name="Icono_ok">OK</string>
+    <string name="escribe_algo">escribe algo</string>
+    <string name="usuario">usuario</string>
+    <string name="imagen_ejemplo">imagen_ejemplo</string>
+</resources>

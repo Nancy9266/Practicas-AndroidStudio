@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ivvon.practicaintegradora.Main"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/BtnBotonSimple"
+        android:text="@string/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#3F51B5"/>
+
+    <ToggleButton
+        android:id="@+id/BtnToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:align_below="@+id/BtnBotonSimple"
+        android:textOff="@string/Off"
+        android:textOn="@string/On"
+        android:layout_below="@+id/BtnBotonSimple"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch android:id="@+id/BtnSwitch"
+        android:textOn="@string/On"
+        android:textOff="@string/Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton android:id="@+id/BtnImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Icono_ok"
+        android:src="@mipmap/ic_estrella" />
+
+    <ImageView android:id="@+id/ImgFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/imagen_ejemplo" />
+
+    <TextView
+        android:id="@+id/lblMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/LblEtiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/escribe_algo"
+        android:background="#ff1ca5ff"
+        android:typeface="monospace"
+        android:layout_below="@+id/BtnToggle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp" />
+
+    <EditText android:id="@+id/TxtBasico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/LblEtiqueta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText android:id="@+id/TxtImagenHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_usuario"
+        android:hint="@string/usuario"
+        android:textColorHint="#CFCFCF"
+        android:inputType="text" />
+
+</RelativeLayout>
